@@ -21,7 +21,7 @@ def file_preprocessing(file):
     texts = text_splitter.split_documents(pages)
     final_texts = ""
     for text in texts:
-        print(text)
+        #print(text)
         final_texts = final_texts + text.page_content
     return final_texts
 
