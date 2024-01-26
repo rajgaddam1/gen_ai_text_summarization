@@ -1,5 +1,5 @@
 import streamlit as st 
-#from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import PyPDFLoader, DirectoryLoader
 from langchain.chains.summarize import load_summarize_chain
 from transformers import T5Tokenizer, T5ForConditionalGeneration
