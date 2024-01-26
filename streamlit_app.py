@@ -11,6 +11,7 @@ import pypdf
 #model and tokenizer loading
 checkpoint = "MBZUAI/LaMini-Flan-T5-248M"
 tokenizer = T5Tokenizer.from_pretrained(checkpoint)
+tokenizer = tokenizer.tokenize(text, max_length=MAX_TOKENS, truncation=True)
 base_model = T5ForConditionalGeneration.from_pretrained(checkpoint, device_map='auto', torch_dtype=torch.float32)
 
 #file loader and preprocessing
