@@ -57,8 +57,6 @@ def displayPDF(file):
     # Displaying File
     #st.markdown(pdf_display, unsafe_allow_html=True)
 
-#streamlit code 
-st.set_page_config(layout="wide")
 
 def main():
     st.title("Document Summarization App using Langauge Model")
@@ -73,7 +71,7 @@ def main():
                 temp_file.write(uploaded_file.read())
             with col1:
                 st.info("Uploaded File")
-                pdf_view = displayPDF(filepath)
+                #pdf_view = displayPDF(filepath)
 
             with col2:
                 summary = llm_pipeline(filepath)
