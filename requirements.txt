@@ -6,3 +6,4 @@ torch
 sentencepiece
 huggingface_hub
 accelerate
+pypdf
