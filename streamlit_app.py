@@ -10,8 +10,8 @@ import pypdf
 # Load model directly
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
-tokenizer = AutoTokenizer.from_pretrained("MBZUAI/LaMini-Flan-T5-248M")
-base_model = AutoModelForSeq2SeqLM.from_pretrained("MBZUAI/LaMini-Flan-T5-248M")
+tokenizer = T5Tokenizer.from_pretrained("MBZUAI/LaMini-Flan-T5-248M")
+base_model = T5ForConditionalGeneration.from_pretrained("MBZUAI/LaMini-Flan-T5-248M")
 
 #file loader and preprocessing
 def file_preprocessing(file):
