@@ -30,9 +30,7 @@ def llm_pipeline(filepath):
     pipe_sum = pipeline(
         'summarization',
         model = base_model,
-        tokenizer = tokenizer,
-        max_length = 500, 
-        min_length = 50)
+        tokenizer = tokenizer)
     input_text = file_preprocessing(filepath)
     result = pipe_sum(input_text)
     result = result[0]['summary_text']
