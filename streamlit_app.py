@@ -9,6 +9,7 @@ import base64
 import pypdf
 
 #model and tokenizer loading
+MAX_TOKENS=510
 checkpoint = "MBZUAI/LaMini-Flan-T5-248M"
 tokenizer = T5Tokenizer.from_pretrained(checkpoint)
 tokenizer = tokenizer.tokenize(text, max_length=MAX_TOKENS, truncation=True)
