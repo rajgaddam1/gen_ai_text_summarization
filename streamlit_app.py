@@ -6,6 +6,7 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration
 from transformers import pipeline
 import torch
 import base64
+import pypdf
 
 #model and tokenizer loading
 checkpoint = "MBZUAI/LaMini-Flan-T5-248M"
