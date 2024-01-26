@@ -7,3 +7,4 @@ sentencepiece
 huggingface_hub
 accelerate
 pypdf
+langchain-community
