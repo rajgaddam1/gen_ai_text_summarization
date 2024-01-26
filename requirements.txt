@@ -3,3 +3,4 @@ langchain
 streamlit
 transformers
 torch
+sentencepiece
